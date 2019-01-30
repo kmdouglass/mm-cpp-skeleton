@@ -1,5 +1,5 @@
 CXX=g++
-CXXFLAGS=-Wall -Wextra -std=c++11
+CXXFLAGS=-Wall -Wextra -g -O0 -std=c++11
 BOOST_INCLUDE_PATH=/usr/include/boost
 BOOST_LIB_PATH=/usr/lib/x86_64-linux-gnu
 PTHREAD_LIB_PATH=/lib/x86_64

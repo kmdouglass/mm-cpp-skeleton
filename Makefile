@@ -25,7 +25,7 @@ $(BIN_PATH):
 	$(MKDIR_P) $@
 
 $(TARGET): src/main.cpp
-	$(CXX) $(CXXFLAGS) -I$(INCLUDE_PATH) $^ -L$(LIB_PATH) -l$(LIBMMCORE) -L$(BOOST_LIB_PATH) -lboost_system -lboost_thread -L$(PTHREAD_LIB_PATH) -lpthread -ldl -o $@
+	$(CXX) $(CXXFLAGS) -I$(INCLUDE_PATH) $^ -L$(LIB_PATH) -l$(LIBMMCORE) -L$(BOOST_LIB_PATH) -lboost_system -lboost_thread -lboost_date_time -L$(PTHREAD_LIB_PATH) -lpthread -ldl -o $@
 
 clean:
 	rm -rf $(BIN_PATH)
